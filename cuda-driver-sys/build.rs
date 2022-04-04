@@ -36,7 +36,7 @@ pub fn find_cuda() -> Vec<PathBuf> {
             for dir_name in &dir_names {
                 target = base.join(dir_name);
                 if target.is_dir() && target.join(lib_name).is_file() {
-                    // valid_paths.push(target);
+                    valid_paths.push(target);
                 }
             }
         }
