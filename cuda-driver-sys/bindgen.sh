@@ -16,5 +16,5 @@ bindgen \
   --with-derive-eq \
   --with-derive-hash \
   --with-derive-ord \
-  wrapper.h -- -I/opt/cuda/include \
+  wrapper.h -- -I/usr/local/cuda-11.7/include \
   > src/cuda.rs
